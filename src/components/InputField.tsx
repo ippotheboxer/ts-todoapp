@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { IoIosAdd } from "react-icons/io";
 
 interface Props {
     todo: string;
@@ -23,7 +24,7 @@ const InputField: React.FC<Props> = ({todo, setTodo, handleAdd}) => {
         className='inputBox'/>
         <button 
         className='inputSubmit' 
-        type='submit'>+</button>
+        type='submit'><IoIosAdd /></button>
     </form>
   )
 }

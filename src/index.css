@@ -36,13 +36,15 @@
     box-shadow: inset 0 0 2px #361A22;
   }
   .inputBox:focus {
-    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 2000px rgba(0, 0, 0, 0.5);
     outline: none;
   }
   .inputSubmit {
     @apply w-8 h-8 m-2 text-lg rounded-full;
     position: absolute;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     right: 0;
     border: none;
     background-color: #E195AB;
@@ -56,5 +58,20 @@
   .inputSubmit:active {
     transform: scale(0.8);
     box-shadow: 0 0 2px #603E48;
+  }
+  .todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .todos_single_text {
+    flex: 1;
+  }
+  .todos_single_text:focus {
+    outline: none;
+  }
+  .icon {
+    @apply ml-1 text-lg cursor-pointer;
   }
 }
